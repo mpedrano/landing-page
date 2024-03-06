@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5rem;
+    position: fixed;
+}
+
+.button {
+    background-color: var(--teal);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 15px;
+}

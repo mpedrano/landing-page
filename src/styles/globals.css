@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --black: #071E22;
+  --white: #FBF7F5;
+  --teal: #1D7874;
+  --pink: #F6B7CC;
+  --yellow: #FFCB77;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: 'Lexend';
+  color: rgb(var(--foreground-rgb));
+  background: var(--white);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
